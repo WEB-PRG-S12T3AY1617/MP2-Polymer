@@ -1,0 +1,11 @@
+{%if all_items %}
+    <ul>
+        {% for item in all_items %}
+        <li>
+            <a href ="/items/{{ item.id }}/">{{ item.name_item}}</a>
+        </li>
+        {% endfor %}
+    </ul>
+{% else %}
+    <h3>No items available</h3>
+{% endif %}
