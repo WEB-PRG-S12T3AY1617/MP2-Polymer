@@ -1,0 +1,428 @@
+body{
+    background: white url("images/bg.jpg")
+}
+
+#secheader{
+    margin-top: 500px;
+    height: 10%;
+    background-color: 06655D;
+}
+
+#itaas1 {
+    margin-top: -8;
+    height: 40px;
+    width: 100.95%;
+    margin-left: -10;
+    background-color: black;
+}
+
+
+
+#itaas2 {
+    height: 12.5%;
+    width: 100.95%;
+    margin-left: -10;
+    background-color: 06655D;
+    color: darken;
+}
+
+#itaasfront {
+    height: 240px;
+    width: 100.95%;
+    margin-left: -10;
+    background-color: 06655D;
+    color: darken;
+}
+
+
+#ibaba1 {
+    height: 40px;
+    width: 100.9%;
+    position: relative;
+    bottom: -110%;
+    margin-left: -10;
+    background-color: #06655D;
+    margin-top: 20px;
+}
+
+#logo{
+    margin-top: 5px;
+    margin-left: 200px;
+    width: 290px;
+    height: auto;
+}
+
+
+
+
+#usercontainer1{
+    height:350px;
+    width: 310px;
+    text-align: center;
+    float: left;
+    margin: 20px; 
+    border: 1px solid #06655D;
+
+}
+
+
+
+
+
+#profpiccontainer2{
+    height: auto;
+    width: 80%;
+    top: 500px;
+    position: absolute;
+    background-color: none;
+    margin-left: 150px;
+    border: 5px solid #06655D;
+    margin-top: -250px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#namefront{
+    font-size: 35px;
+    text-align: center;
+    color: whitesmoke;
+    font-weight: bold;
+    margin-top: 20px;
+    font-family: Chunky Felt;
+}
+
+#profpicfront{
+    width: 250px;
+    height: 250px;
+    border: 2px solid black;
+    margin-top: 20px;
+
+
+}
+
+
+#profpic{
+    margin-top: 0px;
+    margin-left: -357px;
+    width: 310px;
+    height: 285px; 
+    border-radius: 50%;
+}
+
+#button0{
+    margin-top: 6px;
+    width: 75px;
+    height: 30px;
+    position:absolute;
+    right: 320px;
+    font-size: 13px;
+    color: gray;
+    background: black;
+    border-color: black;
+}
+
+#button0:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#button{
+    margin-top: 6px;
+    width: 97px;
+    height: 30px;
+    position:absolute;
+    right: 230px;
+    font-size: 13px;
+    color: gray;
+    background: black;
+    border-color: black;
+}
+
+#button:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#button2{
+    margin-top: 7px;
+    width: 150px;
+    height: 30px;
+    position:absolute;
+    right: 105px;
+    font-size: 13px;
+    color: gray;
+    background: black;
+    border-color: black;
+}
+
+#button2:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#button3{
+    margin-top: 6px;
+    width: 90px;
+    height: 30px;
+    position:absolute;
+    right: 30px;
+    font-size: 13px;
+    color: gray;
+    background: black;
+    
+    border-color: black;
+}
+
+#button3:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 15px;
+}
+
+#button4{
+    width: 200px;
+    height: 30px;
+    position:absolute;
+    right: 30px;
+    font-size: 13px;
+    color: WHITE;
+    background: black;
+    margin-top: 290px;
+    border-color: black;
+    background-color: transparent;
+    border: none;
+}
+
+#button4:hover {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+input[type=text] {
+    width: 6%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    padding: 12px 20px 12px 40px;
+    margin-top: -50px;
+    margin-left: 500px;
+    background-color: white;
+    background-position: 10px 10px; 
+    background-repeat: no-repeat;
+    padding: 12px 20px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+    width: 30%;
+}
+
+#namecontainer {
+    height: 200px;
+    width: 50%;
+    position: absolute;
+    margin-left: 450px;;
+    top: 260px;
+    background-color: none;
+    
+    
+}
+
+#name{
+    color: white;
+    margin-left: 10px;
+    font-size: 50px;
+    margin-top: 10px;
+    opacity: 1.0;
+    font-family:  Chunky Felt;
+}
+
+#infocontainer{
+    height: 20%;
+    width: 18%;
+    top: 450px;
+    position: absolute;
+    background-color: none;
+    margin-left: 70px;
+    border-left: 1px solid #06655D;
+    border-top: 1px solid #06655D;
+    border-right: 1px solid #06655D;
+    border-bottom: 1px solid #06655D;
+    margin-top: 40px;
+}
+
+#info{
+    color: white;
+    margin-left: 10px;
+    font-size: 20px;
+    margin-top: 10px;
+    opacity: 1.0;
+    
+}
+
+#detailscont{
+    margin-left: 70px;
+    border-left: 1px solid #06655D;
+    border-top: 1px solid #06655D;
+    border-right: 1px solid #06655D;
+    border-bottom: 1px solid #06655D;
+    height: 25%;
+    width: 50%;
+    margin-left: 24%;
+    margin-top: -80px;
+    color: white;
+    font-size: 30px;
+    font-family: Chunky Felt;
+    padding: 20px;
+}
+
+#line1{
+    background-color: 06655D;
+    height: 8px;
+    width: 80%;
+    margin-left: 10px;
+    margin-top: -8px;
+}
+
+#dp{
+    margin-left: -350px;
+    margin-bottom: 18px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+#dpcircle{
+    height: 320px;
+    width: 380px;
+    margin-left: 60px;
+}
+
+#postscontainer{
+    
+    height: auto;
+    width: auto;
+    position: absolute;
+    background-color: none;
+    margin-left: 419px;
+    border-left: 3px solid #06655D;
+    border-top: 3px solid #06655D;
+    border-right: 3px solid #06655D;
+    border-bottom: 3px solid #06655D;
+    margin-top: -50px;
+    float: left;
+
+}
+
+
+#postscontainerfront{
+    height: 500px;
+    width: 80%;
+    top: 450px;
+    position: absolute;
+    background-color: none;
+    margin-left: 150px;
+    border-left: 2px solid darkslategray;
+    border-right: 2px solid darkslategray;
+    margin-top: -100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
+    
+    
+}
+
+
+div.gallery {
+    
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 240px;
+    color: white;
+    border-left: 1px solid darkslategray;
+    border-top: 1px solid darkslategray;
+    border-right: 1px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
+    float: left;
+}
+
+div.gallery:hover {
+    border: 2px solid darkslategray;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+div.desc {
+    text-align: center;
+    
+}
+
+
+#profilelink{
+    color: white;
+}
+
+#itemname{
+    font-size: 30px;
+    margin-top: -3px;
+    color: white;
+    font-family: Chunky Felt;
+    font-weight: bold;
+    text-decoration: underline;
+    font-style: italic;
+}
+
+
+#frontlogo{
+    margin-top: 0px;
+    margin-left: 40px;
+    width: 580px;
+    height: auto;
+}
+
+#slogan{
+    width: 190px;
+    position: absolute;
+    margin-left: -240px;
+    margin-top: 80px;
+}
+
+#details{
+    font-size: 15px;
+    margin-top: -3px;
+    color: white; 
+    font-family: verdana;
+}
+
+#white{
+    color: white;
+}
+
+#backbutton{
+    width: 200px;
+    height: 50px;
+    float: right;
+    font-family: Chunky Felt;
+    font-size: 30px;
+    color: white;
+    background-color: transparent;
+    border: none;
+}
+
+#backbutton:hover{
+    font-size: 40px;
+}
+
+

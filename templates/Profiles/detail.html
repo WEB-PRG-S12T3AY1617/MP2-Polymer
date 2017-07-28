@@ -1,0 +1,72 @@
+
+{% load staticfiles %}
+<head>
+    <title> Profiles Page </title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'Profiles/styles2.css' %}">
+
+<div id="itaas1">
+    
+    
+        <a href="http://127.0.0.1:8000/Profiles/register">
+            <button id="button3"> LOG-OUT </button>
+        </a>
+    
+
+    </div>
+    <div id="itaas2">
+        <a href="http://127.0.0.1:8000/homepage/">
+            <img src="/media/LOGO.PNG" id="logo">
+        </a>
+        <img src="/media/SLOGAN.PNG" id="slogan">
+        
+
+    </div> 
+<img src="/media/DP.PNG" id="dpcircle">
+<img src="{{ user.profpic.url }}" id="profpic">
+<div id="namecontainer">
+    <div id="name"> {{ user.name }} </div>
+    <div id="line"></div>
+</div>
+
+
+<div id="infocontainer">
+    <div id="info"> Works at {{ user.company }} </div>
+    <div id="info"> Studied {{ user.degree_Program }} </div>
+</div>
+<ul>
+<div id="postscontainer">
+    {% for item in user.item_set.all  %}
+        <div class="gallery">
+            <a href="http://127.0.0.1:8000/Profiles/itemdetail/{{item.id}}">
+                <img src="{{ item.itempic.url }}" >
+            </a>
+
+        <div class="desc">
+            <div id="itemname"> 
+                {{ item.itemname }} 
+            </div>
+            <div id="details">
+                <b><i> Quantity: </i></b> {{ item.quantity }} <br>
+                <b><i> Item Type: </i></b> {{ item.itemtype }} <br>
+                <b><i> Condition: </i></b> {{ item.condition }} <br>
+                <a href="/Profiles/{{user.id}}/">
+                    <div id="details"> 
+                        <b><i> Seller: </i></b> {{ item.seller }}  <br> 
+                    </div>
+                </a>
+            </div>
+    </div>
+    </div>
+    {% endfor %}
+             
+    
+    
+</ul>
+
+<div id="ibaba1">
+    <a href="http://127.0.0.1:8000/Profiles">
+        <button id="backbutton"> B A C K </button>
+    </a>
+    </div>
