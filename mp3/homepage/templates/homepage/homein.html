@@ -1,0 +1,92 @@
+<html>
+{% load staticfiles %}
+<head>
+    <title>NBMP - Home</title>
+</head>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/harap.css'%}">
+<link rel="stylesheet" type="text/css" href="{% static 'homepage/front.css'%}"> 
+
+
+    
+    <div id="slider">
+    <div id="itaas2">
+
+            <img src="/media/LOGO.PNG" id="logo">
+        
+        <a href="/Profiles/">
+            <button id="frontbuttons"> PROFILE </button>
+        </a>
+        
+        <a href="/logout">
+            <button id="frontbuttons"> LOGOUT</button>
+        </a>
+        
+
+    </div>
+        <figure>
+                     
+            <img src="/media/4.jpg">
+            <img src="/media/9.JPG">   
+            <img src="/media/8.jpg">
+            <img src="/media/5.JPG">
+            <img src="/media/7.jpg">
+            
+        </figure> 
+    </div>
+    
+    <div id="secheader">
+        Most Recent Posts
+        <a href="http://127.0.0.1:8000/homepage/viewallposts/">
+            <button id="longfrontbutton"> View All by 10</button>
+        </a>
+        
+        <a href="http://127.0.0.1:8000/homepage/viewallpostsby15/">
+            <button id="longfrontbutton"> View All by 15</button>
+        </a>
+        <a href="http://127.0.0.1:8000/homepage/viewallpostsby20/">
+            <button id="longfrontbutton"> View All by 20</button>
+        </a>
+    </div>
+ <div id="mostrecentcont">
+        {% for item in all_items  %}
+        <div id="oneitemcont">
+        <div class="gallery">
+            <a href="http://127.0.0.1:8000/Profiles/itemdetail/{{item.id}}">
+                <img src="{{ item.itempic.url }}" >
+            </a>
+
+        <div class="desc">
+            <div id="itemname"> 
+                {{ item.itemname }} 
+            </div>
+            </div> 
+    </div>
+    </div>
+    {% endfor %}
+    </div>
+    
+    
+    
+    <div id="footer">
+        Follow Us!
+        <div id="whiteline"></div>
+        <div id="handles">
+            
+        <a href="https://twitter.com/Hooowan" id="white">
+            <img src="/media/PROFPIC1.jpg" id="smallpic">@hooowan </br>
+        </a>
+        
+        <a href="https://twitter.com/_nikosestupigan" id="white">
+            <img src="/media/PROFPIC2.jpg" id="smallpic">@_nikosestupigan</br>
+        </a>
+        
+        <a href="https://twitter.com/inocentij4" id="white">
+            <img src="/media/capture.jpg" id="smallpic">@inocentij4
+        </a>
+        </div>
+        
+    </div>
+        
+   
+</html>

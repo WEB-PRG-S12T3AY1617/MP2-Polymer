@@ -1,0 +1,74 @@
+<html>
+{% load staticfiles %}
+    <head>
+        <title>All items</title>
+    </head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'homepage/view.css'%}">  
+        
+    <div id="itaas1">   
+        <script>
+            function myFunction() {
+                alert("Logout Successful");
+            }
+        </script>
+    </div>
+
+    <div id="itaas2">
+        <a href="http://127.0.0.1:8000/homepage/">
+            <img src="/media/LOGO.PNG" id="logo">
+        </a>
+            <img src="/media/SLOGAN.PNG" id="slogan">
+        <form method="GET" action=''>
+          <input type="text" name="q" placeholder="Search posts by tag" value="{{ request.GET.q}}"/>
+          <input type="submit" value="Search" />
+        </form>
+        
+<div id="containernext">
+    <div class="pagination">
+        <span class="step-links">
+            {% if all_items.has_previous %}
+                <a href="?{{ page_request_var }}={{ all_items.previous_page_number }}">previous</a>
+            {% endif %}
+
+            <span class="current">
+                <div id="pagecolor">
+                    Page {{ all_items.number }} of {{ all_items.paginator.num_pages }}.
+                </div>
+            </span>
+
+            {% if all_items.has_next %}
+                <a href="?page={{ all_items.next_page_number }}">next</a>
+            {% endif %}
+ 
+        </span>
+    </div>
+</div>
+        
+    </div>   
+
+
+    
+        {% for item in all_items  %}
+            <div id="oneitemcont">
+                <div class="gallery">
+                    <a href="http://127.0.0.1:8000/Profiles/itemdetail/{{ item.id }}">
+                        <img src="{{ item.itempic.url }}" >
+                    </a>
+
+                <div class="desc">
+                    <div id="itemname"> 
+                        {{ item.itemname }} 
+                    </div>
+                </div> 
+                </div>
+            </div>
+
+        {% endfor %}
+    
+
+
+
+
+<div id="ibaba1"></div>
+</html>

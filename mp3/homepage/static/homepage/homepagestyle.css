@@ -1,0 +1,189 @@
+
+
+#secheader{
+    height: 10%;
+    width: 100%;
+    background-color: 06655D;
+    font-size: 380%;
+    padding-top: 1%;
+    padding-left: 3%;
+    font-family: Chunky Felt;
+    color: white;
+    position: relative;
+}
+
+
+#imagebg{
+    background-image: url(images/1.jpg);
+    width: 100%;
+    height: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+} 
+
+@keyframes slider{
+    
+    0% {
+        left: 0;
+    }
+    
+    20% {
+        left: 0;
+    }
+    
+    25% {
+        left: -100%;
+    }
+    
+    45% {
+        left: -100%;
+    }
+    
+    50% {
+        left: -200%;
+    }
+    
+    70% {
+        left: -200%;
+    }
+    
+    75% {
+        left: -300%;
+    }
+    
+    95% {
+        left: -400%;
+    }
+    
+    100% {
+        left: -400%;
+    }
+    
+}
+
+#slider{
+    overflow: hidden;
+}
+
+#slider figure img{
+    width: 20%;
+    height: 800px;
+    float: left;
+}
+
+#slider figure {
+    position:relative;
+    width: 500%;
+    float:left;
+    animation: 20s slider infinite;
+}
+
+#frontbuttons{
+    margin-left: 50px;
+    height: 40%;
+    width: 10%;
+    background-color: transparent;
+    border: none;
+    font-family: Chunky Felt;
+    color:white;
+    font-size: 30px;
+}
+
+#frontbuttons:hover{
+    font-size: 50px;
+}
+
+#mostrecentcont{
+
+    height: 100%;
+    width: 99.9%;
+    border-left: 2px solid darkslategray;
+    border-top: 2px solid darkslategray;
+    border-right: 2px solid darkslategray;
+    border-bottom: 2px solid darkslategray;
+    font-size: 380%;
+    padding-top: 1%;
+    padding-left: 3%;
+    font-family: Chunky Felt;
+    color: white;
+    position: relative;
+    float: right;
+}
+
+#footer{
+    height: 30%;
+    width: 100%;
+    background-color: 06655D;
+    font-size: 380%;
+    padding-top: 1%;
+    padding-left: 3%;
+    font-family: Chunky Felt;
+    color: white;
+    position: relative;
+
+}
+
+#handles{
+    font-size: 30px;
+    color: white;
+    font-family: Chunky Felt;
+}
+
+
+
+#smallpic{
+    margin-left: 5%;
+    width: 4%;
+    height: 22%;
+    border-radius: 50%;
+}
+
+#white{
+    color: white;
+}
+
+#aboutus{
+    margin-left: 85%;
+    margin-top: -14.5%;
+    font-size: 50px;
+}
+
+#whiteline{
+    background-color: white;
+    width: 103.3%;
+    height: 1.5%;
+    margin-left: -3.3%;
+    margin-top: -0.5%;
+    margin-bottom: 1%;
+}
+
+div.gallery {
+    
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 240px;
+    color: white;
+    border-left: 1px solid darkslategray;
+    border-top: 1px solid darkslategray;
+    border-right: 1px solid darkslategray;
+    border-bottom: 1px solid darkslategray;
+    float: left;
+}
+
+div.gallery:hover {
+    border: 2px solid darkslategray;
+}
+
+div.gallery img {
+    width: 100%;
+    height: auto;
+    
+    
+}
+
+div.desc {
+    text-align: center;
+    
+}
